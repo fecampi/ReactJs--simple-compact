@@ -14,7 +14,7 @@ min-width:300px;
 `;
 
 const Header = styled.div`
-background-color: #000;
+background-color: ${props => props.color};
 color: #fff;
 font: 3rem;
 padding:8px 0px;
@@ -35,8 +35,8 @@ padding: 8px 16px;
 
 
 export default props =>
-    <Card>
-        <Header><h1>{props.title}</h1></Header>
+    <Card >
+        <Header color={props.HeaderColor}><h1>{props.title}</h1></Header>
         <Content>{props.children}</Content>
     </Card>
     

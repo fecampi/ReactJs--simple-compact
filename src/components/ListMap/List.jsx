@@ -1,5 +1,6 @@
 import React from 'react'
 import products from '../../data/products'
+import './styles.css'
 
 
 
@@ -16,7 +17,7 @@ export default props => {
 
     return (
         <div>
-            <h2>Repeat</h2>
+            <h2>Lista de Compras</h2>
             <ul>
                 {getProducts()}
             </ul>
